@@ -8,6 +8,6 @@ The toy model is a simple continuous-time value function iteration problem. The 
 The three-country model references the paper at https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4122454.
 The core feature is that interest rate is not a solution of BSDEs. The process is: 1.initialize an interest rate guess, 2.train BSDE-associated variables q and sig_q conditional on rate, 3.update and iterate the interest rate implied by q until the rate converges. The code records interest rate convergence trajectories as well as the solved U-shaped and inverted-U-shaped sig_q profiles.
 
-Now there are some results of different productivity for multi-country model, a=0.04,0.07 and 0.1. The a=0.1 results seem not good.
+Now there are some results of different productivity for multi-country model, a=0.04,0.07 and 0.1 since a doesn't affect sigma q and it only shifts risk free rate r. The a=0.1 results seem not good.
 
 The code is machine-readable and can be parsed directly by AI. My AI is currently suspended, and I will wrap up follow-up work when it's unblocking. I do not want to write any word now without AI.
